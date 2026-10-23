@@ -1,32 +1,36 @@
-# GameZone Store (Demo)
+# GameZone Store — responsive WhatsApp order website
 
-A responsive multi-page shopping website made with HTML, CSS and vanilla JavaScript. Designed for GitHub Pages and beginner learning.
+## Included pages
+- `index.html` — home page, search and popular products
+- `indoor.html` — indoor games catalogue
+- `outdoor.html` — outdoor games catalogue
+- `product.html` — individual product details
+- `login.html` — demo customer details stored in this browser
+- `cart.html` — cart and quantity controls
+- `checkout.html` — delivery form and WhatsApp order draft
+- `style.css` — responsive styling
+- `script.js` — product catalogue, cart and WhatsApp checkout
 
-## Files
-- `index.html` — homepage and featured games
-- `indoor.html` — indoor games collection
-- `outdoor.html` — outdoor games collection
-- `product.html` — product detail page, selected by `?id=...`
-- `login.html` — demo sign-in / registration
-- `cart.html` — cart, quantity and remove controls
-- `checkout.html` — demo checkout and order confirmation
-- `style.css` — shared responsive dark theme
-- `script.js` — sample products and shopping interactions
+## Your WhatsApp number
+The checkout is already configured for **917804847284**.
 
-## Run locally
-Open `index.html` in a browser. For a smoother local test, use VS Code's Live Server extension.
+The site uses WhatsApp Click to Chat. When a customer clicks **Send order to WhatsApp**, WhatsApp opens with the order message filled in. The customer must review the message and press **Send** themselves. A website cannot send WhatsApp messages silently just by using a `wa.me` link.
 
-## Publish with GitHub Pages
-1. Create a GitHub repository, for example `gamezone-store`.
-2. Upload all 9 files to the repository root (not inside a nested folder).
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Choose branch `main` and folder `/ (root)`, then click **Save**.
-6. Wait for GitHub Pages to publish the site. The URL normally looks like `https://YOUR-USERNAME.github.io/gamezone-store/`.
+## Publish on GitHub Pages
+1. Download and unzip `gamezone-store.zip`.
+2. Open your GitHub repository.
+3. Upload all files from this folder into the repository root (do not upload only the ZIP).
+4. Commit the changes.
+5. In **Settings → Pages**, select your publishing branch (usually `main`) and folder `/ (root)`.
+6. Open the Pages URL shown by GitHub.
 
-## Important demo limitations
-- Product names, prices, ratings and stock text are sample data.
-- Login is not secure authentication. It stores a demo name/email in this browser's local storage. Do not enter a real password.
-- Cart and demo orders are saved only in this browser. They are not sent to the shop owner.
-- Checkout does not collect money or create a real shipment.
-- For a real store, use a backend/database, secure authentication, server-side order handling, and a trusted payment provider. Never store real passwords or payment details in browser local storage.
+## Important limitations
+This is a front-end website with a browser-based demo cart. GitHub Pages is static hosting:
+- Cart and demo customer information are stored only in the visitor's browser.
+- Orders are not saved to a seller dashboard or database.
+- No online payment is collected.
+- The WhatsApp message is a customer-sent order request, not proof that the seller has accepted the order.
+- For automatic WhatsApp alerts, order storage, stock management, or online payments, connect a secure backend/database and an approved payment/WhatsApp Business API provider. Do not put secret API keys in `script.js`.
+
+## Change products
+Edit the `PRODUCTS` array near the top of `script.js`. Each product has an `id`, `name`, `category`, `price`, `oldPrice`, `emoji`, `tag`, `rating`, `description`, and `color`.

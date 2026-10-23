@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GameZone Store - shop indoor and outdoor games.">
+  <title>GameZone Store | Play More</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">GZ</span><span>GameZone<span class="brand-light"> Store</span></span></a>
+    <form class="search-bar" id="searchForm"><input id="searchInput" type="search" placeholder="Search games, sports and more..." aria-label="Search products"><button aria-label="Search">⌕</button></form>
+    <nav class="header-actions"><a href="login.html" id="accountLink">Sign in</a><a class="cart-link" href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a></nav>
+  </header>
+  <nav class="category-nav"><a class="active" href="index.html">Home</a><a href="indoor.html">Indoor Games</a><a href="outdoor.html">Outdoor Games</a><a href="#popular">Best Sellers</a></nav>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="pulse"></span> LEVEL UP YOUR PLAY</span>
+        <h1>Game on.<br><span>Every day.</span></h1>
+        <p>Discover your next favorite game. From family game nights to outdoor action, your next adventure starts here.</p>
+        <div class="hero-buttons"><a class="btn btn-primary" href="#popular">Explore games <span>↗</span></a><a class="btn btn-outline" href="outdoor.html">Shop outdoor</a></div>
+        <div class="hero-stats"><div><strong>20+</strong><small>Demo products</small></div><div><strong>2</strong><small>Game worlds</small></div><div><strong>100%</strong><small>Fun guaranteed*</small></div></div>
+      </div>
+      <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-game-icon">🎮</div><div class="floating-card float-top">⚡ <span>Ready to play</span></div><div class="floating-card float-bottom">🏆 <span>Find your next win</span></div><div class="hero-glow"></div></div>
+    </section>
+    <section class="wrap section-block">
+      <div class="section-heading"><div><span class="eyebrow">BROWSE BY PLAY STYLE</span><h2>Choose your arena</h2></div></div>
+      <div class="category-cards">
+        <a class="category-card indoor-card" href="indoor.html"><div class="category-emoji">♟️</div><div><span class="card-kicker">THINK • STRATEGIZE • WIN</span><h3>Indoor Games</h3><p>Board games, chess, carrom and family favorites.</p><span class="text-link">Explore indoor <b>↗</b></span></div></a>
+        <a class="category-card outdoor-card" href="outdoor.html"><div class="category-emoji">🏏</div><div><span class="card-kicker">MOVE • COMPETE • REPEAT</span><h3>Outdoor Games</h3><p>Sports gear and active fun for every day.</p><span class="text-link">Explore outdoor <b>↗</b></span></div></a>
+      </div>
+    </section>
+    <section class="wrap section-block" id="popular">
+      <div class="section-heading"><div><span class="eyebrow">PLAYER FAVORITES</span><h2>Popular picks</h2><p class="muted">A few crowd-pleasers to get your game started.</p></div><a class="text-link" href="indoor.html">View all games ↗</a></div>
+      <div class="product-grid" id="homeProducts"></div>
+    </section>
+    <section class="wrap promo-strip"><div class="promo-icon">🚀</div><div><span class="eyebrow">YOUR NEXT GAME IS WAITING</span><h2>Make play time, your time.</h2><p>Browse the collection and build your own game-night lineup.</p></div><a class="btn btn-primary" href="indoor.html">Start exploring ↗</a></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">GZ</span><span>GameZone<span class="brand-light"> Store</span></span></a><p>Made for play. Built for fun.</p><p class="footer-small">Demo store for learning purposes. Products and prices are sample data.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
